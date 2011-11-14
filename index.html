@@ -5,6 +5,34 @@
   <title>Ford STA Mexico</title>
   <meta name="description" content="">
   <meta name="author" content="Amilcar Andrade Garcia">
+  
+  		<link type="text/css" href="css/ui-lightness/jquery-ui-1.8.16.custom.css" rel="stylesheet" />	
+  		<script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
+  		<script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>
+  		<script type="text/javascript">
+
+
+  			$(function(){
+
+  				// Tabs
+
+  				$('#tabs').tabs();
+  				collapsible: true
+
+
+
+  				//hover states on the static widgets
+  				$('#dialog_link, ul#icons li').hover(
+
+  					function() { $(this).addClass('ui-state-hover'); }, 
+  					function() { $(this).removeClass('ui-state-hover'); }
+
+
+  				);
+
+
+  			});
+  		</script>
 
   <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
   <!--[if lt IE 9]>
@@ -471,6 +499,47 @@
 
 </div>
 </div>
+<hr>
+<div id="tabs">
+			<ul>
+				<li><a href="#tabs-1">Enero</a></li>
+				<li><a href="#tabs-2">Febrero</a></li>
+				<li><a href="#tabs-3">Marzo</a></li>
+				<li><a href="#tabs-4">Abril</a></li>
+					<li><a href="#tabs-5">Mayo</a></li>
+					<li><a href="#tabs-16">Junio</a></li>
+					
+  				<li><a href="#tabs-7">Julio</a></li>
+  				<li><a href="#tabs-8">Agosto</a></li>	
+  				<li><a href="#tabs-9">Septiembre</a></li>
+    				<li><a href="#tabs-10">Octubre</a></li>
+    				<li><a href="#tabs-11">Noviembre</a></li>
+    				<li><a href="#tabs-12">Diciembre</a></li>
+			</ul>
+			<div id="tabs-1">
+			 Fecha 1
+			</div>
+			<div id="tabs-2"><ul><li>Fecha 1 </li> <li>Fecha 2</li></ul></div>
+			<div id="tabs-3">Fecha 3</div>
+			<div id="tabs-4">Fecha 4</div>
+			<div id="tabs-5">Fecha 5</div>
+			<div id="tabs-16">Fecha 6</div>
+			<div id="tabs-7">Fecha 7</div>
+			<div id="tabs-8">Fecha 8</div>
+			<div id="tabs-9">Fecha 9</div>
+			<div id="tabs-10">Fecha 10</div>
+			<div id="tabs-11">Fecha 11</div>
+			<div id="tabs-12">Fecha 12</div>
+			
+			
+			
+		
+		</div>
+			
+				
+				
+			
+		
 
 <hr>
 
