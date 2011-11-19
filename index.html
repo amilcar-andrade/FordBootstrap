@@ -1,38 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="utf-8">
   <title>Ford STA Mexico</title>
   <meta name="description" content="">
   <meta name="author" content="Amilcar Andrade Garcia">
-  
-  		<link type="text/css" href="css/ui-lightness/jquery-ui-1.8.16.custom.css" rel="stylesheet" />	
-  		<script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
-  		<script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>
-  		<script type="text/javascript">
+
+  <link type="text/css" href="css/ui-lightness/jquery-ui-1.8.16.custom.css" rel="stylesheet"/>
+  <script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
+  <script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>
+  <script type="text/javascript">
 
 
-  			$(function(){
+    $(function() {
 
-  				// Tabs
+      // Tabs
 
-  				$('#tabs').tabs();
-  				collapsible: true
-
-
-
-  				//hover states on the static widgets
-  				$('#dialog_link, ul#icons li').hover(
-
-  					function() { $(this).addClass('ui-state-hover'); }, 
-  					function() { $(this).removeClass('ui-state-hover'); }
+      $('#tabs').tabs();
+      collapsible: true
 
 
-  				);
+      //hover states on the static widgets
+      $('#dialog_link, ul#icons li').hover(
+
+        function() {
+          $(this).addClass('ui-state-hover');
+        },
+        function() {
+          $(this).removeClass('ui-state-hover');
+        }
 
 
-  			});
-  		</script>
+      );
+
+
+    });
+  </script>
 
   <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
   <!--[if lt IE 9]>
@@ -501,45 +504,37 @@
 </div>
 <hr>
 <div id="tabs">
-			<ul>
-				<li><a href="#tabs-1">Enero</a></li>
-				<li><a href="#tabs-2">Febrero</a></li>
-				<li><a href="#tabs-3">Marzo</a></li>
-				<li><a href="#tabs-4">Abril</a></li>
-					<li><a href="#tabs-5">Mayo</a></li>
-					<li><a href="#tabs-16">Junio</a></li>
-					
-  				<li><a href="#tabs-7">Julio</a></li>
-  				<li><a href="#tabs-8">Agosto</a></li>	
-  				<li><a href="#tabs-9">Septiembre</a></li>
-    				<li><a href="#tabs-10">Octubre</a></li>
-    				<li><a href="#tabs-11">Noviembre</a></li>
-    				<li><a href="#tabs-12">Diciembre</a></li>
-			</ul>
-			<div id="tabs-1">
-			 Fecha 1
-			</div>
-			<div id="tabs-2"><ul><li>Fecha 1 </li> <li>Fecha 2</li></ul></div>
-			<div id="tabs-3">Fecha 3</div>
-			<div id="tabs-4">Fecha 4</div>
-			<div id="tabs-5">Fecha 5</div>
-			<div id="tabs-16">Fecha 6</div>
-			<div id="tabs-7">Fecha 7</div>
-			<div id="tabs-8">Fecha 8</div>
-			<div id="tabs-9">Fecha 9</div>
-			<div id="tabs-10">Fecha 10</div>
-			<div id="tabs-11">Fecha 11</div>
-			<div id="tabs-12">Fecha 12</div>
-			
-			
-			
-		
-		</div>
-			
-				
-				
-			
-		
+  <ul>
+    <li><a href="#tabs-1">Enero</a></li>
+    <li><a href="#tabs-2">Febrero</a></li>
+    <li><a href="#tabs-3">Marzo</a></li>
+    <li><a href="#tabs-4">Abril</a></li>
+    <li><a href="#tabs-5">Mayo</a></li>
+    <li><a href="#tabs-6">Junio</a></li>
+
+    <li><a href="#tabs-7">Julio</a></li>
+    <li><a href="#tabs-8">Agosto</a></li>
+    <li><a href="#tabs-9">Septiembre</a></li>
+    <li><a href="#tabs-10">Octubre</a></li>
+    <li><a href="#tabs-11">Noviembre</a></li>
+    <li><a href="#tabs-12">Diciembre</a></li>
+  </ul>
+  <div id="tabs-1"></div>
+  <div id="tabs-2"></div>
+  <div id="tabs-3"></div>
+  <div id="tabs-4"></div>
+  <div id="tabs-5"></div>
+  <div id="tabs-6"></div>
+  <div id="tabs-7"></div>
+  <div id="tabs-8"></div>
+  <div id="tabs-9"></div>
+  <div id="tabs-10"></div>
+  <div id="tabs-11"></div>
+  <div id="tabs-12"></div>
+
+
+</div>
+
 
 <hr>
 
@@ -553,7 +548,8 @@
 
     <dl class="dropdown">
 
-      <dt id="one-ddheader" class="upperdd" onmouseover="ddMenu('one',1)" onmouseout="ddMenu('one',-1)">North America</dt>
+      <dt id="one-ddheader" class="upperdd" onmouseover="ddMenu('one',1)" onmouseout="ddMenu('one',-1)">North America
+      </dt>
 
       <dd id="one-ddcontent" onmouseover="cancelHide('one')" onmouseout="ddMenu('one',-1)">
 
@@ -626,7 +622,8 @@
   <div class="span4">
     <dl class="dropdown">
 
-      <dt id="three-ddheader" onmouseover="ddMenu('three',1)" onmouseout="ddMenu('three',-1)"> Asia Pacific and Africa </dt>
+      <dt id="three-ddheader" onmouseover="ddMenu('three',1)" onmouseout="ddMenu('three',-1)"> Asia Pacific and Africa
+      </dt>
 
       <dd id="three-ddcontent" onmouseover="cancelHide('three')" onmouseout="ddMenu('three',-1)">
 
@@ -714,6 +711,9 @@
 </div>
 
 
+<div id="test"></div>
+
+
 <footer>
   <p>&copy; Company 2011</p>
 </footer>
@@ -721,6 +721,69 @@
 </div>
 </div>
 <!-- /container -->
+
+<script type="text/javascript">
+  $(document).ready(function() {
+
+
+    var año = new Date().getFullYear();
+    var arreglo = [];
+    var arreglodic = [];
+
+
+    for (i = 0; i < 12; i++) {
+
+
+      if (i >= 9) {
+        arreglo.push(año + '-' + (i + 1) + '-01');
+        arreglodic.push(año + '-' + (i + 1) + '-31');
+
+
+      } else
+        arreglo.push(año + '-' + '0' + (i + 1) + '-01');
+
+    }
+
+
+    var calendar = ('https://www.google.com/calendar/feeds/fordmexicosta%40gmail.com/public/basic?alt=jsonc&orderby=starttime&sortorder=ascending&hl=es&ctz=Mexico/General&');
+    //var startmin  = ('start-min='+ arreglo[0]);
+    //var startmax = ('&start-max='+ arreglo[1]) ;
+    //var calendarfin= (calendar + startmin + startmax) ;
+
+    var startmin = ('start-min=');
+    var startmax = ('&start-max=');
+
+
+    for (i = 0; i < 11; i++) {
+      (function(i) {
+        $.getJSON(calendar + startmin + arreglo[i] + startmax + arreglo[i + 1], function(json) {
+          imprime(('#tabs-' + (i + 1)), json);
+        });
+      })(i);
+    }
+
+
+    $.getJSON(calendar + startmin + arreglo[11] + startmax + arreglodic[2], function(json) {
+      imprime('#tabs-12', json);
+    });
+
+
+    function imprime(idTab, json) {
+
+
+      var str = '<ul>';
+      var fecha;
+      for (i = 0; i < json.data.items.length; i++) {
+        fecha = json.data.items[i].details;
+
+        fecha = fecha.substring(8, fecha.indexOf("<br"));
+        str = str + '<li>' + json.data.items[i].title + ' - ' + fecha + '</li>';
+      }
+      str = str + '</ul>';
+      $(idTab).html(str);
+    }
+  });
+</script>
 
 </body>
 </html>
