@@ -9,33 +9,8 @@
   <link type="text/css" href="css/ui-lightness/jquery-ui-1.8.16.custom.css" rel="stylesheet"/>
   <script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
   <script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>
-  <script type="text/javascript">
+  <script type="text/javascript" src="js/bootstrap-alerts.js"></script>
 
-
-    $(function() {
-
-      // Tabs
-
-      $('#tabs').tabs();
-      collapsible: true
-
-
-      //hover states on the static widgets
-      $('#dialog_link, ul#icons li').hover(
-
-        function() {
-          $(this).addClass('ui-state-hover');
-        },
-        function() {
-          $(this).removeClass('ui-state-hover');
-        }
-
-
-      );
-
-
-    });
-  </script>
 
   <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
   <!--[if lt IE 9]>
@@ -56,11 +31,6 @@
     }
   </style>
 
-  <!-- Le fav and touch icons -->
-  <link rel="shortcut icon" href="images/favicon.ico">
-  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
 </head>
 
 <body>
@@ -92,6 +62,19 @@
 </div>
 
 <div class="container well">
+
+
+
+<div id="calendarioalerta" class="alert-message block-message success fade in" data-alert="alert">
+  <a class="close" href="#">&times;</a>
+
+  <p>Accesa al calendario de <strong>Ford STA M&eacute;xico</strong> y checa los diferentes eventos que se aproximan.</p>
+
+  <div class="alert-actions">
+    <a class="btn small" href="html/calendar.html">Ir al Calendario!</a>
+
+  </div>
+</div>
 
 
 <!-- Example row of columns -->
@@ -248,6 +231,9 @@
 
 
 </div>
+
+
+
 
 <div class="span6">
   <h2>FORD STA M&Eacute;XICO</h2><h4>Bienvenidos</h4>
@@ -514,41 +500,7 @@
 </div>
 </div>
 
-<hr>
-<div id="tabs">
-  <ul>
-    <li><a href="#tabs-1">Enero</a></li>
-    <li><a href="#tabs-2">Febrero</a></li>
-    <li><a href="#tabs-3">Marzo</a></li>
-    <li><a href="#tabs-4">Abril</a></li>
-    <li><a href="#tabs-5">Mayo</a></li>
-    <li><a href="#tabs-6">Junio</a></li>
 
-    <li><a href="#tabs-7">Julio</a></li>
-    <li><a href="#tabs-8">Agosto</a></li>
-    <li><a href="#tabs-9">Septiembre</a></li>
-    <li><a href="#tabs-10">Octubre</a></li>
-    <li><a href="#tabs-11">Noviembre</a></li>
-    <li><a href="#tabs-12">Diciembre</a></li>
-  </ul>
-  <div id="tabs-1"></div>
-  <div id="tabs-2"></div>
-  <div id="tabs-3"></div>
-  <div id="tabs-4"></div>
-  <div id="tabs-5"></div>
-  <div id="tabs-6"></div>
-  <div id="tabs-7"></div>
-  <div id="tabs-8"></div>
-  <div id="tabs-9"></div>
-  <div id="tabs-10"></div>
-  <div id="tabs-11"></div>
-  <div id="tabs-12"></div>
-
-
-</div>
-
-
-<hr>
 <hr>
 
 
@@ -558,139 +510,112 @@
 <div class="row">
 
   <div class="span4">
+    <p><strong> North America</strong></p>
 
 
-    <dl class="dropdown">
+    <ul>
 
-      <dt id="one-ddheader" class="upperdd" onmouseover="ddMenu('one',1)" onmouseout="ddMenu('one',-1)">North America
-      </dt>
+      <li><a href="http://che03002.chihuahua.ford.com/chep_intranet/index.asp" class="underline">Chihuahua
+        Intranet</a></li>
 
-      <dd id="one-ddcontent" onmouseover="cancelHide('one')" onmouseout="ddMenu('one',-1)">
+      <li><a href=" https://www.tc2.ford.com/ts/HSAPWP/HSAP/default.aspx" class="underline">Hermosillo Assembly </a>
+      </li>
 
-        <ul>
+      <li><a href="http://www.cuautitlan.ford.com" class="underline">Cuautitl&aacute;n Assembly</a></li>
 
-          <li><a href="http://che03002.chihuahua.ford.com/chep_intranet/index.asp" class="underline">Chihuahua
-            Intranet</a></li>
+      <li><a href="http://cap.ba.ford.com/" class="underline">Chicago Assembly</a></li>
+      <li><a href="http://www.oakville.ford.com/index2.htm" class="underline">Oakville Assembly</a></li>
+      <li><a href="https://www.tc2.ford.com/ts/MANUFACTURINGSYSTEM/assembly/operations/dtp/DTPWEB/default.aspx"
+             class="underline">Dearborn Assembly</a></li>
+      <li><a href="http://www.kcap.ford.com/" class="underline">Kansas City Assembly </a></li>
 
-          <li><a href=" https://www.tc2.ford.com/ts/HSAPWP/HSAP/default.aspx" class="underline">Hermosillo Assembly </a>
-          </li>
-
-          <li><a href="http://www.cuautitlan.ford.com" class="underline">Cuautitl&aacute;n Assembly</a></li>
-
-          <li><a href="http://cap.ba.ford.com/" class="underline">Chicago Assembly</a></li>
-          <li><a href="http://www.oakville.ford.com/index2.htm" class="underline">Oakville Assembly</a></li>
-          <li><a href="https://www.tc2.ford.com/ts/MANUFACTURINGSYSTEM/assembly/operations/dtp/DTPWEB/default.aspx"
-                 class="underline">Dearborn Assembly</a></li>
-          <li><a href="http://www.kcap.ford.com/" class="underline">Kansas City Assembly </a></li>
-
-          <li><a href="https://dept.sp.ford.com/sites/MichiganAssemblyPlant/Pages/safety.html" class="underline">
-            Michigan Assembly</a></li>
+      <li><a href="https://dept.sp.ford.com/sites/MichiganAssemblyPlant/Pages/safety.html" class="underline">
+        Michigan Assembly</a></li>
 
 
-          <li><a href="https://dept.sp.ford.com/sites/ohioassembly/Pages/Default.aspx">Ohio Assembly</a></li>
-          <li><a href="http://www.ktp.ford.com/qualitycontrol/Default.htm" class="underline">Kentucky Truck</a></li>
-          <li><a href="https://comm.sp.ford.com/sites/autoalliance/Pages/Default.aspx"
-                 class="underline">AutoAlliance</a></li>
-          <li><a href="http://tcapweb.twincities.ford.com/" class="underline">Twin City Assembly</a></li>
-          <li><a
-            href="https://www.tc2.ford.com/ts/MANUFACTURINGSYSTEM/assembly/operations/stap/Shared%20Documents/MainPage.aspx"
-            class="underline">St. Thomas Assy. </a></li>
+      <li><a href="https://dept.sp.ford.com/sites/ohioassembly/Pages/Default.aspx">Ohio Assembly</a></li>
+      <li><a href="http://www.ktp.ford.com/qualitycontrol/Default.htm" class="underline">Kentucky Truck</a></li>
+      <li><a href="https://comm.sp.ford.com/sites/autoalliance/Pages/Default.aspx"
+             class="underline">AutoAlliance</a></li>
+      <li><a href="http://tcapweb.twincities.ford.com/" class="underline">Twin City Assembly</a></li>
+      <li><a
+        href="https://www.tc2.ford.com/ts/MANUFACTURINGSYSTEM/assembly/operations/stap/Shared%20Documents/MainPage.aspx"
+        class="underline">St. Thomas Assy. </a></li>
 
 
-        </ul>
+    </ul>
 
-      </dd>
 
-    </dl>
   </div>
 
   <div class="span4">
 
-    <dl class="dropdown">
+    <p><strong> Europe</strong></p>
 
-      <dt id="two-ddheader" class="upperdd" onmouseover="ddMenu('two',1)" onmouseout="ddMenu('two',-1)">Europe</dt>
+    <ul>
 
-      <dd id="two-ddcontent" onmouseover="cancelHide('two')" onmouseout="ddMenu('two',-1)">
-
-        <ul>
-
-          <li><a href="http://www.fordandina.ford.com/Proyectos/fps/FPS_default.htm">Valencia Assembly</a></li>
-          <li><a href="https://www.tc.ford.com/pps/ahibell/uddevalla">Uddevala</a></li>
-          <li><a href="https://dept.sp.ford.com/sites/saarlouis/Pages/Default.aspx">Saarlouis Body & Assembly Plant</a>
-          </li>
-          <li><a href="http://www.genk.ford.com/mondpvt">Genk Assembly</a></li>
-          <li><a href="https://www.tc2.ford.com/ts/ukfmservices/fldagweb/fldaghome.html">Ford Otosan Kocaeli Plant</a>
-          </li>
-          <li><a href="https://comm.sp.ford.com/sites/sos/psos/Lists/Local%20Contacts/AllItems.aspx">St. Petersburg
-            Assembly</a></li>
-          <li><a href="http://fertigung.niehl.ford.com/index.html">Cologne Body & Assembly</a></li>
+      <li><a href="http://www.fordandina.ford.com/Proyectos/fps/FPS_default.htm">Valencia Assembly</a></li>
+      <li><a href="https://www.tc.ford.com/pps/ahibell/uddevalla">Uddevala</a></li>
+      <li><a href="https://dept.sp.ford.com/sites/saarlouis/Pages/Default.aspx">Saarlouis Body & Assembly Plant</a>
+      </li>
+      <li><a href="http://www.genk.ford.com/mondpvt">Genk Assembly</a></li>
+      <li><a href="https://www.tc2.ford.com/ts/ukfmservices/fldagweb/fldaghome.html">Ford Otosan Kocaeli Plant</a>
+      </li>
+      <li><a href="https://comm.sp.ford.com/sites/sos/psos/Lists/Local%20Contacts/AllItems.aspx">St. Petersburg
+        Assembly</a></li>
+      <li><a href="http://fertigung.niehl.ford.com/index.html">Cologne Body & Assembly</a></li>
 
 
-        </ul>
+    </ul>
 
-      </dd>
-
-    </dl>
   </div>
 
   <div class="span4">
-    <dl class="dropdown">
 
-      <dt id="three-ddheader" onmouseover="ddMenu('three',1)" onmouseout="ddMenu('three',-1)"> Asia Pacific and Africa
-      </dt>
+    <p><strong> Asia Pacific and Africa</strong></p>
 
-      <dd id="three-ddcontent" onmouseover="cancelHide('three')" onmouseout="ddMenu('three',-1)">
-
-        <ul>
+    <ul>
 
 
-          <li><a href="https://comm.sp.ford.com/sites/faan/Pages/Default.aspx">Ford Motor Company of South Africa</a>
-          </li>
-          <li><a href="https://team.sp.ford.com/sites/AAT/default.aspx">Auto Alliance (Thailand) Co. Ltd.</a></li>
-          <li><a href="https://dept.sp.ford.com/sites/bm1qa/Pages/Default.aspx">Broadmeadows Assembly Plant</a></li>
-          <li><a href="">Changan Ford Mazda Automobile. Co. Ltd.</a></li>
-          <li><a href="">Ford India Private Limited</a></li>
-          <li><a href="https://team.sp.ford.com/sites/FPS/FLH%20Assy%20Plant%20Taiwan%20FPS/Forms/AllItems.aspx">Ford
-            Lio Ho Motor Co. Ltd</a></li>
-          <li><a
-            href="https://dept.sp.ford.com/sites/ExportandGrowth/Lists/DHL%20Consignee%20and%20Dealer%20List/DispForm.aspx?ID=120">Ford
-            Malaysia Sdn.</a></li>
-          <li><a href="http://www.at.ford.com/news/Publications/Pages/FordPhilippinesinEnglish.aspx">Ford Motor Company
-            Philippines</a></li>
-          <li><a href="http://www.at.ford.com/news/Publications/Pages/FordinVietnamese.aspx">Hai Duong Assembly
-            Plants</a></li>
-          <li><a
-            href="https://dept.sp.ford.com/sites/ExportandGrowth/Lists/DHL%20Consignee%20and%20Dealer%20List/DispForm.aspx?ID=113">Jiangling
-            Motors Co. Ltd.</a></li>
+      <li><a href="https://comm.sp.ford.com/sites/faan/Pages/Default.aspx">Ford Motor Company of South Africa</a>
+      </li>
+      <li><a href="https://team.sp.ford.com/sites/AAT/default.aspx">Auto Alliance (Thailand) Co. Ltd.</a></li>
+      <li><a href="https://dept.sp.ford.com/sites/bm1qa/Pages/Default.aspx">Broadmeadows Assembly Plant</a></li>
+      <li><a href="">Changan Ford Mazda Automobile. Co. Ltd.</a></li>
+      <li><a href="">Ford India Private Limited</a></li>
+      <li><a href="https://team.sp.ford.com/sites/FPS/FLH%20Assy%20Plant%20Taiwan%20FPS/Forms/AllItems.aspx">Ford
+        Lio Ho Motor Co. Ltd</a></li>
+      <li><a
+        href="https://dept.sp.ford.com/sites/ExportandGrowth/Lists/DHL%20Consignee%20and%20Dealer%20List/DispForm.aspx?ID=120">Ford
+        Malaysia Sdn.</a></li>
+      <li><a href="http://www.at.ford.com/news/Publications/Pages/FordPhilippinesinEnglish.aspx">Ford Motor Company
+        Philippines</a></li>
+      <li><a href="http://www.at.ford.com/news/Publications/Pages/FordinVietnamese.aspx">Hai Duong Assembly
+        Plants</a></li>
+      <li><a
+        href="https://dept.sp.ford.com/sites/ExportandGrowth/Lists/DHL%20Consignee%20and%20Dealer%20List/DispForm.aspx?ID=113">Jiangling
+        Motors Co. Ltd.</a></li>
 
 
-        </ul>
+    </ul>
 
-      </dd>
 
-    </dl>
   </div>
 
   <div class="span4">
-    <dl class="dropdown">
 
-      <dt id="four-ddheader" onmouseover="ddMenu('four',1)" onmouseout="ddMenu('four',-1)"> South America</dt>
-
-      <dd id="four-ddcontent" onmouseover="cancelHide('four')" onmouseout="ddMenu('four',-1)">
-
-        <ul>
-
-          <li><a href="" class="underline">Pacheco Stamping & Assembly (Buenos Aires, Argentina)</a></li>
-
-          <li><a href="https://team.sp.ford.com/sites/sbccarsFA/default.aspx">Sao Bernardo Assembly (Sao Bernardo do
-            Campo, Brazil)</a></li>
-
-        </ul>
+    <p><strong>South America</strong></p>
 
 
-      </dd>
+    <ul>
 
-    </dl>
+      <li><a href="" class="underline">Pacheco Stamping & Assembly (Buenos Aires, Argentina)</a></li>
+
+      <li><a href="https://team.sp.ford.com/sites/sbccarsFA/default.aspx">Sao Bernardo Assembly (Sao Bernardo do
+        Campo, Brazil)</a></li>
+
+    </ul>
+
 
   </div>
 </div>
@@ -712,7 +637,8 @@
     <p>
       <a href="http://www.facebook.com/fordmx"><img src="html/images/facebook.png" height="45" width="45"/></a>
       <a href="http://twitter.com/#!/fordmx"><img src="html/images/twitter.png" height="45" width="45"/></a>
-      <a href="http://www.youtube.com/user/Ford?blend=1&ob=4"><img src="html/images/youtube.png" height="45" width="45"></a>
+      <a href="http://www.youtube.com/user/Ford?blend=1&ob=4"><img src="html/images/youtube.png" height="45"
+                                                                   width="45"></a>
 
     </p>
   </div>
@@ -726,77 +652,6 @@
 <footer>
   <p>&copy; Designed by: Ing. Amilcar Andrade G.</p>
 </footer>
-
-
-<!-- /container -->
-
-
-<script>
-  alert("Liga de Calendario")
-</script>
-
-<script type="text/javascript">
-  $(document).ready(function() {
-
-
-    var año = new Date().getFullYear();
-    var arreglo = [];
-    var arreglodic = [];
-
-
-    for (i = 0; i < 12; i++) {
-
-
-      if (i >= 9) {
-        arreglo.push(año + '-' + (i + 1) + '-01');
-        arreglodic.push(año + '-' + (i + 1) + '-31');
-
-
-      } else
-        arreglo.push(año + '-' + '0' + (i + 1) + '-01');
-
-    }
-
-
-    var calendar = ('https://www.google.com/calendar/feeds/fordmexicosta%40gmail.com/public/basic?alt=jsonc&orderby=starttime&sortorder=ascending&hl=es&ctz=Mexico/General&');
-    //var startmin  = ('start-min='+ arreglo[0]);
-    //var startmax = ('&start-max='+ arreglo[1]) ;
-    //var calendarfin= (calendar + startmin + startmax) ;
-
-    var startmin = ('start-min=');
-    var startmax = ('&start-max=');
-
-
-    for (i = 0; i < 11; i++) {
-      (function(i) {
-        $.getJSON(calendar + startmin + arreglo[i] + startmax + arreglo[i + 1], function(json) {
-          imprime(('#tabs-' + (i + 1)), json);
-        });
-      })(i);
-    }
-
-
-    $.getJSON(calendar + startmin + arreglo[11] + startmax + arreglodic[2], function(json) {
-      imprime('#tabs-12', json);
-    });
-
-
-    function imprime(idTab, json) {
-
-
-      var str = '<ul>';
-      var fecha;
-      for (i = 0; i < json.data.items.length; i++) {
-        fecha = json.data.items[i].details;
-
-        fecha = fecha.substring(8, fecha.indexOf("<br"));
-        str = str + '<li>' + json.data.items[i].title + ' - ' + fecha + '</li>';
-      }
-      str = str + '</ul>';
-      $(idTab).html(str);
-    }
-  });
-</script>
 
 </body>
 </html>
